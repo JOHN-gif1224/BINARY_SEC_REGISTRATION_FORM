@@ -8,16 +8,20 @@
     <link rel="stylesheet" href="src\css\output.css">
 </head>
 
-<body class="container mx-auto flex md:justify-center md:items-center flex-col">
+<body class="mx-auto flex md:justify-center md:items-center
+            flex-col bg-gradient-to-bl from-[#928777] to-[#2F2920] bg-cover bg-origin-padding min-h-screen">
 
-    <section class="flex flex-col gap-15 shadow-lg rounded-xl p-6 md:p-10 mt-5 md:mt-10
+    <section class="flex flex-col gap-15 bg-white/60 backdrop-blur-3xl shadow-lg rounded-xl p-6 md:p-10 mt-5 md:mt-10
                 w-full max-w-sm md:max-w-2xl lg:max-w-3xl mx-auto">
         <!-- Mots de bienvenue -->
         <div class="flex justify-center items-center flex-col gap-3">
-            <h1 class="text-2xl font-bold text-center">Inscrit toi à la nouvelle cohorte du JumpStart Program de
+            <h1 class="text-3xl text-[#312B21] font-bold text-center">Inscrit toi à la nouvelle cohorte du JumpStart
+                Program de
                 BinarySec Academy
             </h1>
-            <p class="text-center md:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic nobis qui,
+            <p class="text-center grayscale-25 md:text-lg">Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit.
+                Hic nobis qui,
                 exercitationem
                 culpa minus illo,
                 ipsam quia dolores cupiditate explicabo ratione, odio dicta incidunt facilis magnam quae soluta atque.
@@ -27,27 +31,29 @@
         <div class="flex justify-items-center-safe flex-col">
             <form action="" enctype="multipart/form-data">
                 <div>
-                    <label for="name" class="block text-xl font-medium mb-2">Nom*</label>
+                    <label for="name" class="block text-xl text-[#0C0B09] font-medium mb-2">Nom*</label>
                     <input type="text" class="border border-gray-300 rounded-md p-2 w-full mb-7 text-lg" id="name"
                         required>
                 </div>
                 <div>
-                    <label for="prenom" class="block text-xl font-medium mb-2">Prénoms*</label>
+                    <label for="prenom" class="block text-xl text-[#0C0B09] font-medium mb-2">Prénoms*</label>
                     <input type="text" class="border border-gray-300 rounded-md p-2 w-full mb-7 text-lg" id="prenom"
                         required>
                 </div>
                 <div>
-                    <label for="email" class="block text-xl font-medium mb-2">E-mail*</label>
+                    <label for="email" class="block text-xl text-[#0C0B09] font-medium mb-2">E-mail*</label>
                     <input type="email" class="border border-gray-300 rounded-md p-2 w-full mb-7 text-lg" id="email"
                         required>
                 </div>
                 <div>
-                    <label for="number" class="block text-xl font-medium mb-2">Numéro de téléphone*</label>
+                    <label for="number" class="block text-xl text-[#0C0B09] font-medium mb-2">Numéro de
+                        téléphone*</label>
                     <input type="tel" class="border border-gray-300 rounded-md p-2 w-full mb-7 text-lg" id="number"
                         placeholder="+228 | " required>
                 </div>
                 <div>
-                    <label for="niveau" class="block text-xl font-medium mb-2">Niveau universitaire*</label>
+                    <label for="niveau" class="block text-xl text-[#0C0B09] font-medium mb-2">Niveau
+                        universitaire*</label>
                     <select type="text" class="border border-gray-300 rounded-md p-2 w-full mb-7 text-lg" id="niveau"
                         required>
                         <option value="">Choisissez votre niveau</option>
@@ -57,23 +63,25 @@
                     </select>
                 </div>
                 <div>
-                    <label for="motivation" class="block text-xl font-medium mb-2">Quel est ta motivation?</label>
+                    <label for="motivation" class="block text-xl font-medium mb-2 text-[#0C0B09]">Quel est ta
+                        motivation?</label>
                     <textarea type="text" class="border border-gray-300 rounded-md w-full mb-7 p-4" id="motivation"
                         required></textarea>
                 </div>
                 <div>
-                    <label for="cv" class="block text-xl font-medium mb-2">CV (facultatif)</label>
+                    <label for="cv" class="block text-xl font-medium mb-2 text-[#0C0B09]">CV (facultatif)</label>
                     <input type="file" id="cv" class="border border-gray-300 rounded-md max-w-32 p-2"
                         accept=".pdf,.doc,.docx,.txt">
                 </div>
 
-                <button class="bg-blue-500 text-white p-2 mt-5 rounded-md">S'inscrire</button>
+                <button
+                    class=" bg-[#0C0B09] hover:bg-[#312B21] duration-300 text-white text-lg px-8 p-2 mt-5 rounded-md">S'inscrire</button>
             </form>
         </div>
 
     </section>
 
-    <footer class="footer mt-6 p-10 text-center text-gray-500">
+    <footer class="footer mt-6 p-10 text-center font-black text-lg">
         <p>© 2025 JumpStart Program by
             BinarySec Academy • johnpkatin@gmail.com</p>
     </footer>
