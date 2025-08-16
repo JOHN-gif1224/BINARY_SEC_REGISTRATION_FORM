@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSCRIPTION-BINARY_SEC</title>
+    <link rel="stylesheet" href="src\css\output.css">
+</head>
+
+<body class="container mx-auto flex md:justify-center md:items-center flex-col">
+
+    <section class="flex flex-col gap-15 shadow-lg rounded-xl p-6 md:p-10 mt-5 md:mt-10
+                w-full max-w-sm md:max-w-2xl lg:max-w-3xl mx-auto">
+        <!-- Mots de bienvenue -->
+        <div class="flex justify-center items-center flex-col gap-3">
+            <h1 class="text-2xl font-bold text-center">Inscrit toi à la nouvelle cohorte du JumpStart Program de
+                BinarySec Academy
+            </h1>
+            <p class="text-center md:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic nobis qui,
+                exercitationem
+                culpa minus illo,
+                ipsam quia dolores cupiditate explicabo ratione, odio dicta incidunt facilis magnam quae soluta atque.
+                Asperiores.</p>
+        </div>
+
+        <div class="flex justify-items-center-safe flex-col">
+            <form action="" enctype="multipart/form-data">
+                <div>
+                    <label for="name" class="block text-xl font-medium mb-2">Nom*</label>
+                    <input type="text" class="border border-gray-300 rounded-md p-2 w-full mb-7 text-lg" id="name"
+                        required>
+                </div>
+                <div>
+                    <label for="prenom" class="block text-xl font-medium mb-2">Prénoms*</label>
+                    <input type="text" class="border border-gray-300 rounded-md p-2 w-full mb-7 text-lg" id="prenom"
+                        required>
+                </div>
+                <div>
+                    <label for="email" class="block text-xl font-medium mb-2">E-mail*</label>
+                    <input type="email" class="border border-gray-300 rounded-md p-2 w-full mb-7 text-lg" id="email"
+                        required>
+                </div>
+                <div>
+                    <label for="number" class="block text-xl font-medium mb-2">Numéro de téléphone*</label>
+                    <input type="tel" class="border border-gray-300 rounded-md p-2 w-full mb-7 text-lg" id="number"
+                        placeholder="+228 | " required>
+                </div>
+                <div>
+                    <label for="niveau" class="block text-xl font-medium mb-2">Niveau universitaire*</label>
+                    <select type="text" class="border border-gray-300 rounded-md p-2 w-full mb-7 text-lg" id="niveau"
+                        required>
+                        <option value="">Choisissez votre niveau</option>
+                        <option value="">Licence 1</option>
+                        <option value="">Licence 2</option>
+                        <option value="">Licence 3</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="motivation" class="block text-xl font-medium mb-2">Quel est ta motivation?</label>
+                    <textarea type="text" class="border border-gray-300 rounded-md w-full mb-7 p-4" id="motivation"
+                        required></textarea>
+                </div>
+                <div>
+                    <label for="cv" class="block text-xl font-medium mb-2">CV (facultatif)</label>
+                    <input type="file" id="cv" class="border border-gray-300 rounded-md max-w-32 p-2"
+                        accept=".pdf,.doc,.docx,.txt">
+                </div>
+
+                <button class="bg-blue-500 text-white p-2 mt-5 rounded-md">S'inscrire</button>
+            </form>
+        </div>
+
+    </section>
+
+    <footer class="footer mt-6 p-10 text-center text-gray-500">
+        <p>© 2025 JumpStart Program by
+            BinarySec Academy • johnpkatin@gmail.com</p>
+    </footer>
+
+</body>
+
+</html>
