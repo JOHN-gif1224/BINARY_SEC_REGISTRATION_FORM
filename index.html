@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INSCRIPTION-BINARY_SEC</title>
-    <link rel="stylesheet" href="src\css\output.css">
+    <link rel="stylesheet" href="src/css/output.css">
+    <!-- Ajout du SDK EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- Notre script -->
+    <script src="script.js" defer></script>
 </head>
 
 <body class="mx-auto flex md:justify-center md:items-center
@@ -29,53 +33,49 @@
         </div>
 
         <div class="flex justify-items-center-safe flex-col">
-            <form action="" enctype="multipart/form-data">
+            <form onsubmit="handleSubmit(event)" enctype="multipart/form-data">
                 <div>
                     <label for="name" class="block text-xl text-[#0C0B09] font-medium mb-2">Nom*</label>
-                    <input type="text" class="border border-gray-300 rounded-md p-2 w-full mb-7 text-lg" id="name"
-                        required>
+                    <input type="text" class="border border-gray-300 rounded-md p-2 w-full mb-7 text-lg" id="name">
                 </div>
                 <div>
                     <label for="prenom" class="block text-xl text-[#0C0B09] font-medium mb-2">Prénoms*</label>
-                    <input type="text" class="border border-gray-300 rounded-md p-2 w-full mb-7 text-lg" id="prenom"
-                        required>
+                    <input type="text" class="border border-gray-300 rounded-md p-2 w-full mb-7 text-lg" id="prenom">
                 </div>
                 <div>
                     <label for="email" class="block text-xl text-[#0C0B09] font-medium mb-2">E-mail*</label>
-                    <input type="email" class="border border-gray-300 rounded-md p-2 w-full mb-7 text-lg" id="email"
-                        required>
+                    <input type="email" class="border border-gray-300 rounded-md p-2 w-full mb-7 text-lg" id="email">
                 </div>
                 <div>
                     <label for="number" class="block text-xl text-[#0C0B09] font-medium mb-2">Numéro de
                         téléphone*</label>
                     <input type="tel" class="border border-gray-300 rounded-md p-2 w-full mb-7 text-lg" id="number"
-                        placeholder="+228 | " required>
+                        placeholder="+228 | ">
                 </div>
                 <div>
                     <label for="niveau" class="block text-xl text-[#0C0B09] font-medium mb-2">Niveau
                         universitaire*</label>
-                    <select type="text" class="border border-gray-300 rounded-md p-2 w-full mb-7 text-lg" id="niveau"
-                        required>
+                    <select type="text" class="border border-gray-300 rounded-md p-2 w-full mb-7 text-lg" id="niveau">
                         <option value="">Choisissez votre niveau</option>
-                        <option value="">Licence 1</option>
-                        <option value="">Licence 2</option>
-                        <option value="">Licence 3</option>
+                        <option value="licence1">Licence 1</option>
+                        <option value="licence2">Licence 2</option>
+                        <option value="licence3">Licence 3</option>
                     </select>
                 </div>
                 <div>
                     <label for="motivation" class="block text-xl font-medium mb-2 text-[#0C0B09]">Quel est ta
                         motivation?</label>
-                    <textarea type="text" class="border border-gray-300 rounded-md w-full mb-7 p-4" id="motivation"
-                        required></textarea>
+                    <textarea type="text" class="border border-gray-300 rounded-md w-full mb-7 p-4"
+                        id="motivation"></textarea>
                 </div>
                 <div>
                     <label for="cv" class="block text-xl font-medium mb-2 text-[#0C0B09]">CV (facultatif)</label>
-                    <input type="file" id="cv" class="border border-gray-300 rounded-md max-w-32 p-2"
+                    <input type="file" id="cv" class="border border-gray-300 rounded-md max-w-60 p-2"
                         accept=".pdf,.doc,.docx,.txt">
                 </div>
 
-                <button
-                    class=" bg-[#0C0B09] hover:bg-[#312B21] duration-300 text-white text-lg px-8 p-2 mt-5 rounded-md">S'inscrire</button>
+                <button class="bg-[#0C0B09] hover:bg-[#312B21] duration-300 text-white text-lg px-8 p-2 mt-5 rounded-md"
+                    type="submit">S'inscrire</button>
             </form>
         </div>
 

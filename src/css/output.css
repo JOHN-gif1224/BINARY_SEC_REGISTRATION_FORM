@@ -220,6 +220,12 @@
   .max-w-32 {
     max-width: calc(var(--spacing) * 32);
   }
+  .max-w-40 {
+    max-width: calc(var(--spacing) * 40);
+  }
+  .max-w-60 {
+    max-width: calc(var(--spacing) * 60);
+  }
   .max-w-sm {
     max-width: var(--container-sm);
   }
@@ -388,13 +394,6 @@
     &:hover {
       @media (hover: hover) {
         background-color: #312B21;
-      }
-    }
-  }
-  .hover\:bg-\[\#\] {
-    &:hover {
-      @media (hover: hover) {
-        background-color: #;
       }
     }
   }
