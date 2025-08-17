@@ -1,6 +1,3 @@
-// Remplacez 'YOUR_PUBLIC_KEY' par votre clé publique EmailJS
-// Remplacez 'YOUR_SERVICE_ID' et 'YOUR_TEMPLATE_ID' par vos identifiants EmailJS
-
 // Initialisation d'EmailJS
 (function () {
   emailjs.init("e36mIRgmUB3tiUKym");

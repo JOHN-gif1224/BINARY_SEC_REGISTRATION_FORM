@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="src/css/output.css">
     <!-- Ajout du SDK EmailJS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <!-- Notre script -->
+    <!-- script -->
     <script src="script.js" defer></script>
 </head>
 
@@ -23,39 +23,44 @@
                 Program de
                 BinarySec Academy
             </h1>
-            <p class="text-center grayscale-25 md:text-lg">Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit.
-                Hic nobis qui,
-                exercitationem
-                culpa minus illo,
-                ipsam quia dolores cupiditate explicabo ratione, odio dicta incidunt facilis magnam quae soluta atque.
-                Asperiores.</p>
+            <p class="text-center grayscale-25 md:text-lg">
+                Rejoins notre programme d'accélération pour développer tes compétences en cybersécurité ou développement
+                web et mobile, et améliorer tes capacités
+                dans ces domaines en tant qu'étudiant ou professionnel. Le JumpStart Program t'offre une formation <span
+                    class="font-bold">intensive</span> et un
+                <span class="font-bold">accompagnement personnalisé</span> pour t'aider à atteindre tes objectifs
+                professionnels.
+            </p>
         </div>
 
         <div class="flex justify-items-center-safe flex-col">
             <form onsubmit="handleSubmit(event)" enctype="multipart/form-data">
                 <div>
                     <label for="name" class="block text-xl text-[#0C0B09] font-medium mb-2">Nom*</label>
-                    <input type="text" class="border border-gray-300 rounded-md p-2 w-full mb-7 text-lg" id="name">
+                    <input type="text" class="border border-gray-300 rounded-md p-2 w-full mb-7 text-lg" id="name"
+                        required>
                 </div>
                 <div>
                     <label for="prenom" class="block text-xl text-[#0C0B09] font-medium mb-2">Prénoms*</label>
-                    <input type="text" class="border border-gray-300 rounded-md p-2 w-full mb-7 text-lg" id="prenom">
+                    <input type="text" class="border border-gray-300 rounded-md p-2 w-full mb-7 text-lg" id="prenom"
+                        required>
                 </div>
                 <div>
                     <label for="email" class="block text-xl text-[#0C0B09] font-medium mb-2">E-mail*</label>
-                    <input type="email" class="border border-gray-300 rounded-md p-2 w-full mb-7 text-lg" id="email">
+                    <input type="email" class="border border-gray-300 rounded-md p-2 w-full mb-7 text-lg" id="email"
+                        required>
                 </div>
                 <div>
                     <label for="number" class="block text-xl text-[#0C0B09] font-medium mb-2">Numéro de
                         téléphone*</label>
                     <input type="tel" class="border border-gray-300 rounded-md p-2 w-full mb-7 text-lg" id="number"
-                        placeholder="+228 | ">
+                        placeholder="+228 | " value="+228 | " required>
                 </div>
                 <div>
                     <label for="niveau" class="block text-xl text-[#0C0B09] font-medium mb-2">Niveau
                         universitaire*</label>
-                    <select type="text" class="border border-gray-300 rounded-md p-2 w-full mb-7 text-lg" id="niveau">
+                    <select type="text" class="border border-gray-300 rounded-md p-2 w-full mb-7 text-lg" id="niveau"
+                        required>
                         <option value="">Choisissez votre niveau</option>
                         <option value="licence1">Licence 1</option>
                         <option value="licence2">Licence 2</option>
@@ -65,8 +70,8 @@
                 <div>
                     <label for="motivation" class="block text-xl font-medium mb-2 text-[#0C0B09]">Quel est ta
                         motivation?</label>
-                    <textarea type="text" class="border border-gray-300 rounded-md w-full mb-7 p-4"
-                        id="motivation"></textarea>
+                    <textarea type="text" class="border border-gray-300 rounded-md w-full mb-7 p-4" id="motivation"
+                        required></textarea>
                 </div>
                 <div>
                     <label for="cv" class="block text-xl font-medium mb-2 text-[#0C0B09]">CV (facultatif)</label>
